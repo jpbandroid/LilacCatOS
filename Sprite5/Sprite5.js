@@ -56,7 +56,7 @@ export default class Sprite5 extends Sprite {
   }
 
   *whenthisspriteclicked() {
-    /* TODO: Implement looks_gotofrontback */ null;
+    this.moveAhead();
     this.broadcast("message5");
   }
 }
