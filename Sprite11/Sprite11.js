@@ -51,7 +51,7 @@ export default class Sprite11 extends Sprite {
   }
 
   *whenIReceiveMessage4() {
-    this.moveAhead();
+    /* TODO: Implement looks_gotofrontback */ null;
   }
 
   *whenGreenFlagClicked() {
