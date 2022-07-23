@@ -62,7 +62,7 @@ export default class Sprite9 extends Sprite {
   }
 
   *whenIReceiveMessage4() {
-    /* TODO: Implement looks_gotofrontback */ null;
+    this.moveAhead();
   }
 
   *whenIReceiveMessage6() {
