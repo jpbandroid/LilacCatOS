@@ -43,7 +43,7 @@ export default class EmojiU1f4bf2 extends Sprite {
   }
 
   *whenIReceiveMessage4() {
-    /* TODO: Implement looks_gotofrontback */ null;
+    this.moveAhead();
   }
 
   *whenGreenFlagClicked() {

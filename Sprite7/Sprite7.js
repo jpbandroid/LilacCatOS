@@ -55,7 +55,7 @@ export default class Sprite7 extends Sprite {
   }
 
   *whenthisspriteclicked() {
-    /* TODO: Implement looks_gotofrontback */ null;
+    this.moveAhead();
     this.costume = "costume1";
     this.broadcast("message4");
   }

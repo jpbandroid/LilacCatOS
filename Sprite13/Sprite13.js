@@ -42,7 +42,7 @@ export default class Sprite13 extends Sprite {
   }
 
   *whenIReceiveMessage4() {
-    /* TODO: Implement looks_gotofrontback */ null;
+    this.moveAhead();
   }
 
   *whenGreenFlagClicked() {

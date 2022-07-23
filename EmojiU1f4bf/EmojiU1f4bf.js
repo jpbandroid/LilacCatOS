@@ -45,7 +45,7 @@ export default class EmojiU1f4bf extends Sprite {
   }
 
   *whenIReceiveMessage4() {
-    /* TODO: Implement looks_gotofrontback */ null;
+    this.moveAhead();
   }
 
   *whenGreenFlagClicked() {
