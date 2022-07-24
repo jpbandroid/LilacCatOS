@@ -27,6 +27,8 @@ import Sprite21 from "./Sprite21/Sprite21.js";
 import Sprite22 from "./Sprite22/Sprite22.js";
 import Sprite23 from "./Sprite23/Sprite23.js";
 import Sprite24 from "./Sprite24/Sprite24.js";
+import Sprite25 from "./Sprite25/Sprite25.js";
+import Sprite26 from "./Sprite26/Sprite26.js";
 
 import {
   fluentButton,
@@ -244,6 +246,24 @@ const sprites = {
     costumeNumber: 1,
     size: 100,
     visible: true
+  }),
+  Sprite25: new Sprite25({
+    x: 49,
+    y: 46,
+    direction: 90,
+    costumeNumber: 1,
+    size: 100,
+    visible: true,
+    layerOrder: 26
+  }),
+  Sprite26: new Sprite26({
+    x: 50,
+    y: -39,
+    direction: 90,
+    costumeNumber: 1,
+    size: 100,
+    visible: true,
+    layerOrder: 28
   })
 };
 
