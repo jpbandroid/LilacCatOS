@@ -22,6 +22,11 @@ import Sprite16 from "./Sprite16/Sprite16.js";
 import Sprite17 from "./Sprite17/Sprite17.js";
 import Sprite18 from "./Sprite18/Sprite18.js";
 import Sprite19 from "./Sprite19/Sprite19.js";
+import Sprite20 from "./Sprite20/Sprite20.js";
+import Sprite21 from "./Sprite21/Sprite21.js";
+import Sprite22 from "./Sprite22/Sprite22.js";
+import Sprite23 from "./Sprite23/Sprite23.js";
+import Sprite24 from "./Sprite24/Sprite24.js";
 
 import {
   fluentButton,
@@ -195,6 +200,46 @@ const sprites = {
   Sprite19: new Sprite19({
     x: 44,
     y: 25,
+    direction: 90,
+    costumeNumber: 1,
+    size: 100,
+    visible: true
+  }),
+  Sprite20: new Sprite20({
+    x: -194.05946702223991,
+    y: -98.06961613877758,
+    direction: 90,
+    costumeNumber: 1,
+    size: 100,
+    visible: true
+  }),
+  Sprite21: new Sprite21({
+    x: 76.17944630259021,
+    y: 26.663335990972058,
+    direction: 90,
+    costumeNumber: 1,
+    size: 100,
+    visible: true
+  }),
+  Sprite22: new Sprite22({
+    x: 209.90613153164512,
+    y: 107.45710167061272,
+    direction: 90,
+    costumeNumber: 1,
+    size: 100,
+    visible: true
+  }),
+  Sprite23: new Sprite23({
+    x: 83.77444836479782,
+    y: 89.81139405721228,
+    direction: 90,
+    costumeNumber: 1,
+    size: 40,
+    visible: true
+  }),
+  Sprite24: new Sprite24({
+    x: 69.66616803604805,
+    y: 18.532542244503,
     direction: 90,
     costumeNumber: 1,
     size: 100,
