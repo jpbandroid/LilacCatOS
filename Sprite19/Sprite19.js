@@ -3,6 +3,7 @@
 import {
   Sprite,
   Trigger,
+  Watcher,
   Costume,
   Color,
   Sound
@@ -15,7 +16,7 @@ export default class Sprite19 extends Sprite {
     this.costumes = [
       new Costume("costume1", "./Sprite19/costumes/costume1.svg", {
         x: 86.72669528820936,
-        y: 18.975858030918175
+        y: 18.975858030918033
       })
     ];
 

@@ -3,6 +3,7 @@
 import {
   Sprite,
   Trigger,
+  Watcher,
   Costume,
   Color,
   Sound
@@ -62,7 +63,7 @@ export default class Sprite16 extends Sprite {
   }
 
   *whenIReceiveMessage8() {
-    /* TODO: Implement looks_gotofrontback */ null;
+    this.moveAhead();
   }
 
   *whenIReceiveMessage10() {
