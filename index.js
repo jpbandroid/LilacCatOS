@@ -30,12 +30,6 @@ import Sprite24 from "./Sprite24/Sprite24.js";
 import Sprite25 from "./Sprite25/Sprite25.js";
 import Sprite26 from "./Sprite26/Sprite26.js";
 
-import {
-  fluentButton,
-  provideFluentDesignSystem
-} from "https://unpkg.com/@fluentui/web-components@2.0.0";
-
-provideFluentDesignSystem().register(fluentButton());
 const stage = new Stage({ costumeNumber: 1 });
 
 const sprites = {
@@ -45,7 +39,8 @@ const sprites = {
     direction: 90,
     costumeNumber: 1,
     size: 100,
-    visible: true
+    visible: true,
+    layerOrder: 3
   }),
   Sprite2: new Sprite2({
     x: -25.94671630859375,
@@ -53,7 +48,8 @@ const sprites = {
     direction: 90,
     costumeNumber: 1,
     size: 100,
-    visible: true
+    visible: true,
+    layerOrder: 1
   }),
   Sprite4: new Sprite4({
     x: -220.99151552764232,
@@ -61,7 +57,8 @@ const sprites = {
     direction: 90,
     costumeNumber: 1,
     size: 100,
-    visible: true
+    visible: true,
+    layerOrder: 27
   }),
   Sprite3: new Sprite3({
     x: -195.801025390625,
@@ -69,7 +66,8 @@ const sprites = {
     direction: 90,
     costumeNumber: 2,
     size: 100,
-    visible: true
+    visible: true,
+    layerOrder: 2
   }),
   Sprite5: new Sprite5({
     x: -169.32421875,
@@ -77,15 +75,17 @@ const sprites = {
     direction: 90,
     costumeNumber: 1,
     size: 100,
-    visible: true
+    visible: true,
+    layerOrder: 17
   }),
   Sprite6: new Sprite6({
-    x: -114.87060546875,
-    y: 73.93904113769531,
+    x: -113.87060546875,
+    y: 70.93904113769531,
     direction: 90,
     costumeNumber: 1,
     size: 100,
-    visible: true
+    visible: true,
+    layerOrder: 21
   }),
   Sprite7: new Sprite7({
     x: 5.02655029296875,
@@ -93,7 +93,8 @@ const sprites = {
     direction: 90,
     costumeNumber: 2,
     size: 100,
-    visible: false
+    visible: false,
+    layerOrder: 4
   }),
   Sprite8: new Sprite8({
     x: -181.8131103515625,
@@ -101,7 +102,8 @@ const sprites = {
     direction: 90,
     costumeNumber: 1,
     size: 100,
-    visible: true
+    visible: true,
+    layerOrder: 19
   }),
   Sprite9: new Sprite9({
     x: 135.91448974609375,
@@ -109,7 +111,8 @@ const sprites = {
     direction: 90,
     costumeNumber: 1,
     size: 100,
-    visible: false
+    visible: false,
+    layerOrder: 11
   }),
   Sprite10: new Sprite10({
     x: 9.574560105542645,
@@ -117,15 +120,17 @@ const sprites = {
     direction: 90,
     costumeNumber: 1,
     size: 40,
-    visible: false
+    visible: false,
+    layerOrder: 10
   }),
   Sprite11: new Sprite11({
-    x: -1.96759033203125,
-    y: -0.960235595703125,
+    x: -0.96759033203125,
+    y: -5.960235595703125,
     direction: 90,
     costumeNumber: 1,
     size: 100,
-    visible: false
+    visible: false,
+    layerOrder: 5
   }),
   EmojiU1f4bf: new EmojiU1f4bf({
     x: -111.986328125,
@@ -133,7 +138,8 @@ const sprites = {
     direction: 90,
     costumeNumber: 1,
     size: 100,
-    visible: false
+    visible: false,
+    layerOrder: 7
   }),
   Sprite12: new Sprite12({
     x: -13.9569091796875,
@@ -141,7 +147,8 @@ const sprites = {
     direction: 90,
     costumeNumber: 1,
     size: 100,
-    visible: false
+    visible: false,
+    layerOrder: 8
   }),
   EmojiU1f4bf2: new EmojiU1f4bf2({
     x: -112.31359025767205,
@@ -149,7 +156,8 @@ const sprites = {
     direction: 90,
     costumeNumber: 1,
     size: 100,
-    visible: false
+    visible: false,
+    layerOrder: 6
   }),
   Sprite13: new Sprite13({
     x: -15.04419400064269,
@@ -157,7 +165,8 @@ const sprites = {
     direction: 90,
     costumeNumber: 1,
     size: 100,
-    visible: false
+    visible: false,
+    layerOrder: 9
   }),
   Sprite14: new Sprite14({
     x: -180.25633249523236,
@@ -165,15 +174,17 @@ const sprites = {
     direction: 90,
     costumeNumber: 1,
     size: 100,
-    visible: true
+    visible: true,
+    layerOrder: 18
   }),
   Sprite15: new Sprite15({
     x: 45.95152909807151,
     y: 24.394879333692913,
     direction: 90,
-    costumeNumber: 1,
+    costumeNumber: 2,
     size: 100,
-    visible: true
+    visible: false,
+    layerOrder: 12
   }),
   Sprite16: new Sprite16({
     x: 121.56891577790816,
@@ -181,7 +192,8 @@ const sprites = {
     direction: 90,
     costumeNumber: 1,
     size: 100,
-    visible: true
+    visible: false,
+    layerOrder: 13
   }),
   Sprite17: new Sprite17({
     x: 46,
@@ -189,7 +201,8 @@ const sprites = {
     direction: 90,
     costumeNumber: 1,
     size: 100,
-    visible: true
+    visible: false,
+    layerOrder: 14
   }),
   Sprite18: new Sprite18({
     x: 44,
@@ -197,7 +210,8 @@ const sprites = {
     direction: 90,
     costumeNumber: 1,
     size: 100,
-    visible: true
+    visible: false,
+    layerOrder: 15
   }),
   Sprite19: new Sprite19({
     x: 44,
@@ -205,7 +219,8 @@ const sprites = {
     direction: 90,
     costumeNumber: 1,
     size: 100,
-    visible: true
+    visible: false,
+    layerOrder: 16
   }),
   Sprite20: new Sprite20({
     x: -194.05946702223991,
@@ -213,39 +228,44 @@ const sprites = {
     direction: 90,
     costumeNumber: 1,
     size: 100,
-    visible: true
+    visible: true,
+    layerOrder: 20
   }),
   Sprite21: new Sprite21({
-    x: 76.17944630259021,
-    y: 26.663335990972058,
+    x: 49.17944630259021,
+    y: -0.3366640090279418,
     direction: 90,
     costumeNumber: 1,
     size: 100,
-    visible: true
+    visible: true,
+    layerOrder: 22
   }),
   Sprite22: new Sprite22({
-    x: 209.90613153164512,
-    y: 107.45710167061272,
+    x: 175.90613153164512,
+    y: 80.4571016706127,
     direction: 90,
     costumeNumber: 1,
     size: 100,
-    visible: true
+    visible: true,
+    layerOrder: 24
   }),
   Sprite23: new Sprite23({
-    x: 83.77444836479782,
-    y: 89.81139405721228,
+    x: 34.77444836479782,
+    y: 61.81139405721228,
     direction: 90,
     costumeNumber: 1,
     size: 40,
-    visible: true
+    visible: true,
+    layerOrder: 23
   }),
   Sprite24: new Sprite24({
-    x: 69.66616803604805,
-    y: 18.532542244503,
+    x: 41.66616803604805,
+    y: -15.467457755497009,
     direction: 90,
     costumeNumber: 1,
     size: 100,
-    visible: true
+    visible: true,
+    layerOrder: 25
   }),
   Sprite25: new Sprite25({
     x: 49,
@@ -267,5 +287,7 @@ const sprites = {
   })
 };
 
-const project = new Project(stage, sprites);
+const project = new Project(stage, sprites, {
+  frameRate: 30 // Set to 60 to make your project run faster
+});
 export default project;

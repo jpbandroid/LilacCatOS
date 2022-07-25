@@ -3,6 +3,7 @@
 import {
   Stage as StageBase,
   Trigger,
+  Watcher,
   Costume,
   Color,
   Sound
@@ -24,5 +25,15 @@ export default class Stage extends StageBase {
     this.triggers = [];
 
     this.vars.startmenuon = 1;
+    this.vars.command = "lilacos --help";
+
+    this.watchers.command = new Watcher({
+      label: "command",
+      style: "large",
+      visible: true,
+      value: () => this.vars.command,
+      x: 386,
+      y: 35
+    });
   }
 }

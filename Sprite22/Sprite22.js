@@ -3,6 +3,7 @@
 import {
   Sprite,
   Trigger,
+  Watcher,
   Costume,
   Color,
   Sound
@@ -54,6 +55,7 @@ export default class Sprite22 extends Sprite {
   *whenthisspriteclicked() {
     this.costume = "costume2";
     yield* this.wait(1);
+    this.broadcast("message13");
   }
 
   *whenIReceiveMessage11() {
