@@ -3,6 +3,7 @@
 import {
   Sprite,
   Trigger,
+  Watcher,
   Costume,
   Color,
   Sound
@@ -55,7 +56,7 @@ export default class Sprite15 extends Sprite {
   }
 
   *whenthisspriteclicked() {
-    /* TODO: Implement looks_gotofrontback */ null;
+    this.moveAhead();
     this.costume = "costume1";
     this.broadcast("message8");
   }

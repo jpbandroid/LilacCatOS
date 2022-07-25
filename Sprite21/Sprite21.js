@@ -3,6 +3,7 @@
 import {
   Sprite,
   Trigger,
+  Watcher,
   Costume,
   Color,
   Sound
@@ -48,10 +49,21 @@ export default class Sprite21 extends Sprite {
 
   *whenGreenFlagClicked() {
     this.visible = false;
+    this.stage.watchers.command.visible = false;
+    this.stage.vars.command = "";
   }
 
   *whenIReceiveMessage11() {
     this.visible = true;
+    this.stage.watchers.command.visible = true;
+    yield* this.askAndWait("");
+    this.stage.vars.command = this.answer;
+    if (this.stage.vars.command == "lilacos --help") {
+      this.broadcast("message14");
+    }
+    if (this.stage.vars.command == "lilacos --copyright") {
+      this.broadcast("message15");
+    }
   }
 
   *whenthisspriteclicked() {
@@ -66,5 +78,6 @@ export default class Sprite21 extends Sprite {
 
   *whenIReceiveMessage13() {
     this.visible = false;
+    this.stage.watchers.command.visible = false;
   }
 }
